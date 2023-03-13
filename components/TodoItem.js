@@ -15,13 +15,15 @@ const TodoItem = ({ textItem = "Nothing Here" }) => {
 
 const styles = StyleSheet.create({
   todoItemBox: {
+    minWidth: 200,
     marginTop: 7,
     marginBottom: 7,
     padding: 10,
     borderRadius: 10,
-    backgroundColor: "#D5D5C5",
+    backgroundColor: "#D9D9C9",
     flexDirection: "row",
     alignItems: "center",
+    justifyContent: "space-between",
   },
   todoItemText: {
     fontWeight: 600,
