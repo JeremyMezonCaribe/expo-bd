@@ -15,8 +15,8 @@ const TodoItem = ({ textItem = "Nothing Here" }) => {
 
 const styles = StyleSheet.create({
   todoItemBox: {
-    marginTop: 15,
-    marginBottom: 15,
+    marginTop: 7,
+    marginBottom: 7,
     padding: 10,
     borderRadius: 10,
     backgroundColor: "#D5D5C5",
@@ -27,3 +27,5 @@ const styles = StyleSheet.create({
     fontWeight: 600,
   },
 });
+
+export default TodoItem;

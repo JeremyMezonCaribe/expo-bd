@@ -6,6 +6,7 @@ import {
   TouchableHighlight,
   View,
 } from "react-native";
+import TodoList from "../components/TodoList";
 
 export default function App() {
   return (
@@ -19,9 +20,10 @@ export default function App() {
           <Text>SAVE</Text>
         </TouchableHighlight>
       </View>
-      <View style={styles.taskListContainer}>
+      <TodoList />
+      {/* <View style={styles.taskListContainer}>
         <Text style={styles.noTaskText}>{`No task to do yet :)`}</Text>
-      </View>
+      </View> */}
     </View>
   );
 }
@@ -36,7 +38,7 @@ const styles = StyleSheet.create({
   taskContainer: {
     width: "100%",
     marginTop: 50,
-    marginBottom: 15,
+    marginBottom: 30,
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-between",
